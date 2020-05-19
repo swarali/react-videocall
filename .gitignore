@@ -1,2 +1,5 @@
 client/dist/
 client/index.html
+.idea/
+*.swp
+node_modules/
