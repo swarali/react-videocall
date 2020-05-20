@@ -4,6 +4,8 @@ $fa-font-path: "~font-awesome/fonts";
 $icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
 
+@import '~video-react/styles/scss/video-react';
+
 @import "variables";
 @import "shared/base";
 
@@ -13,7 +15,6 @@ html {
 
 body {
   background: rgba(#000000, 0.6);
-  padding: 0px 20px 20px 20px;
   min-height: 100vh;
 }
 

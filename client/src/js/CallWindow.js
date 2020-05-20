@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Player } from 'video-react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
@@ -39,8 +40,15 @@ function CallWindow({ peerSrc, localSrc, config, mediaDevice, status, endCall })
 
   return (
     <div className={classnames('call-window', status)}>
-      <video id="peerVideo" ref={peerVideo} autoPlay />
-      <video id="localVideo" ref={localVideo} autoPlay muted />
+      <div className="video-player">
+        <Player
+          src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
+        />
+      </div>
+      <div className="side-panel">
+        <video id="peerVideo" ref={peerVideo} autoPlay />
+        <video id="localVideo" ref={localVideo} autoPlay muted />
+      </div>
       <div className="video-control">
         <button
           key="btnVideo"

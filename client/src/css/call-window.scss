@@ -7,18 +7,27 @@
 	opacity: 0;
 	z-index: -1;
 	@include transition(opacity 0.5s);
-	@include bg-gradient(top, #074055 0%, #030D10 100%);
-	
+	background: black;
+
 	&.active {
 		opacity: 1;
 		z-index: auto;
-		
+
 		.video-control {
 			z-index: auto;
 			@include animation(in-fadeout 3s ease);
 		}
 	}
-	
+	.video-player {
+		max-height: 100%;
+		max-width: 90%;
+	}
+
+	.side-panel {
+		max-height: 100%;
+		max-width: 10%;
+	}
+
 	.video-control {
 		position: absolute;
 		bottom: 20px;
@@ -28,27 +37,27 @@
 		opacity: 0;
 		z-index: -1;
 		@include transition(opacity 0.5s);
-		
-		
+
+
 		&:hover {
 			opacity: 1;
 		}
 	}
-	
+
 	video {
 		position: absolute;
 	}
-	
+
 	#localVideo {
 		bottom: 0;
 		right: 0;
-		width: 20%;
-		height: 20%;
+		height: 10%;
 	}
-	
+
 	#peerVideo {
-		width: 100%;
-		height: 100%;
+		bottom: 10%;
+		right: 0;
+		height: 10%;
 	}
 }
 
@@ -70,19 +79,19 @@
 		border-radius: 50%;
 		cursor: pointer;
 		transition-duration: 0.25s;
-		
+
 		&:hover {
-			opacity: 0.8;	
+			opacity: 0.8;
 		}
-		
+
 		&.hangup {
 			background-color: $red;
 			@include transform(rotate(135deg));
 		}
-		
+
 		&:not(.hangup) {
 			background-color: $blue;
-			
+
 			&.disable {
 				background-color: $red;
 			}
