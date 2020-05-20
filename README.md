@@ -1,5 +1,7 @@
-## React-VideoCall
-Demo app: https://morning-escarpment-67980.herokuapp.com/  
+## React-videoCall with video-sync
+Videocall + videosync app: https://react-video-sync.herokuapp.com/
+
+Forked from https://github.com/nguymin4/react-videocall
 
 <img align="right" width="420" src="https://raw.githubusercontent.com/nguymin4/react-videocall/master/screenshots/1.png"  alt =" " style="border: solid 1px #d4d4d4" />
   
@@ -22,10 +24,6 @@ yarn watch:client
 
 
 ### Deployment
-
-**Heroku**
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/nguymin4/react-videocall/tree/production)
 
 **Custom**
 ```
