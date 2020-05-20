@@ -1,4 +1,4 @@
-## React-videoCall with video-sync
+## React-videocall with video-sync
 Videocall + videosync app: https://react-video-sync.herokuapp.com/
 
 Forked from https://github.com/nguymin4/react-videocall
